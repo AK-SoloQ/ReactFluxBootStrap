@@ -4,6 +4,7 @@ class TodoForm extends Component {
 
     onClick(eve) {
         const txt = this.todoTitle.value;
+        this.todoTitle.value    = '';
         this.props.onNewTodo({
             title:txt,
             done:false,
@@ -20,7 +21,7 @@ class TodoForm extends Component {
                             <input type="text" className="form-control" name="todo" id="todo" placeholder="Requested to do Item" required ref={(input) => this.todoTitle = input}  />
                         </div>
                     </div>
-                     <input type="submit" name="submit" id="submit"  className="btn btn-primary pull-right btn-lg" onClick={this.onClick.bind(this)}/>
+                    <input type="submit" name="submit" id="submit" className="btn btn-primary btn-lg btn-block" onClick={this.onClick.bind(this)}/>
                  </div>
              </div>
             )

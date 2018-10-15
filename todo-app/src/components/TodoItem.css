@@ -1,0 +1,16 @@
+.TableItem1 {
+    position: static;
+    text-align: left;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.TableItem2 {
+
+    position: static;
+    text-align: center;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+} 

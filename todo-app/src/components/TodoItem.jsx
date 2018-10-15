@@ -4,6 +4,38 @@ import PropTypes from 'prop-types';
 import './TodoItem.css';
 
 class TodoItem  extends Component {
+
+    componentWillMount() {
+        console.log('component Will Mount');
+        console.log("1 lorsque le component va etre monter");
+    }
+
+    componentDidMount() {
+        console.log('component Did Mount');
+        console.log('2 lorsque le component a etre monter')
+    }
+
+    componentWillReceiveProps() {
+        console.log('component will Receive Props');
+        console.log('3 lorsque le component  va resevoir des props')
+    }
+
+    shouldComponentUpdate() {
+        console.log('should component  update');
+        return true;
+    }
+
+    componentWillUpdate() {
+        console.log("component will update");
+    }
+
+    componentDidUpdate() {
+        console.log('component did update');
+    }
+
+    componentWillUnmount() {
+        console.log('unmount');
+    }
     
     render() {
         let   item = this.props.item;

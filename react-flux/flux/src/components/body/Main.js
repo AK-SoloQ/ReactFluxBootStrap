@@ -4,6 +4,9 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import More from './More'
+import Blue from './Blue'
+import Red from './Red'
+import Yellow from './Yellow'
 
 
 // The Main component renders one of the three provided
@@ -17,6 +20,9 @@ const Main = () => (
       <Route exact path='/' component={Home}/>
       <Route path='/About' component={About}/>
       <Route path='/More/:number' component={More}/>
+      <Route path='/Blue' component={Blue}/>
+      <Route path='/Red' component={Red}/>
+      <Route path='/Yellow' component={Yellow}/>
     </Switch>
   </main>
 )

@@ -18,6 +18,9 @@ export default class Hearder extends Component {
       <NavItem path="/" name="Home" />
       <NavItem path="/About" name="About" />
       <NavItem path="/More/3" name="More" />
+      <NavItem path="/Blue" name="Blue" />
+      <NavItem path="/Red" name="Red" />
+      <NavItem path="/Yellow" name="Yellow" />
       <NavDropdown name="Dropdown">
         <a className="dropdown-item" href="/">Action</a>
         <a className="dropdown-item" href="/">Another action</a>

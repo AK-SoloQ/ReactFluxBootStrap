@@ -8,7 +8,6 @@ import Blue from './Blue'
 import Red from './Red'
 import Yellow from './Yellow'
 
-
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
 // and /schedule routes will match any pathname that starts
@@ -17,12 +16,12 @@ import Yellow from './Yellow'
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/About' component={About}/>
-      <Route path='/More/:number' component={More}/>
-      <Route path='/Blue' component={Blue}/>
-      <Route path='/Red' component={Red}/>
-      <Route path='/Yellow' component={Yellow}/>
+      <Route exact path='/' component={Home} />
+      <Route path='/About' component={About} />
+      <Route path='/More/:number' component={More} />
+      <Route path='/Blue' component={Blue} />
+      <Route path='/Red' component={Red} />
+      <Route path='/Yellow' component={Yellow} />
     </Switch>
   </main>
 )
